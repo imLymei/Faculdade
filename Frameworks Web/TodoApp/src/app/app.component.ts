@@ -25,6 +25,8 @@ export class AppComponent {
 			new Tarefa('Estudar Frameworks WEB', false),
 			new Tarefa('Comer Pizza', false),
 			new Tarefa('Ajudar meus pais', false),
+			new Tarefa('Ariane Lacerda - 215641', false),
+			new Tarefa('Felipe Cardoso - 218411', false),
 		];
 	}
 }

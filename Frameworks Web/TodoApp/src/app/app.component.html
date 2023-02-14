@@ -1,14 +1,8 @@
-<main>
-	<h1>AI CARAMBA</h1>
-	<p>Esta é a nova View do AppComponent</p>
-	<p>Ariane - 215641</p>
-	<p>Felipe - 218411</p>
-	<div class="main">
-		<h2>To Do List</h2>
-		<ul>
-			<li *ngFor="let tarefaDoLoop of arrayDeTarefas">{{ tarefaDoLoop.descricao }}</li>
-		</ul>
-		<input class="lg-text-input" #campoNovoItem />
-		<button class="btn-primary" (click)="CREATE_tarefa(campoNovoItem.value)">Criar Tarefa</button>
-	</div>
+<main class="main">
+	<h1>To Do List</h1>
+	<ul>
+		<li *ngFor="let tarefaDoLoop of arrayDeTarefas">{{ tarefaDoLoop.descricao }}</li>
+	</ul>
+	<input class="lg-text-input" #campoNovoItem />
+	<button class="btn-primary" (click)="CREATE_tarefa(campoNovoItem.value)">Criar Tarefa</button>
 </main>
