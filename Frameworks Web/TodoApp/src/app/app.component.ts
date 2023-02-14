@@ -14,6 +14,12 @@ export class AppComponent {
 	constructor() {
 		this.READ_tarefas();
 	}
+
+	CREATE_tarefa(_descricaoNovaTarefa: string) {
+		var novaTarefa = new Tarefa(_descricaoNovaTarefa, false);
+		this.arrayDeTarefas.unshift(novaTarefa);
+	}
+
 	READ_tarefas() {
 		this.arrayDeTarefas = [
 			new Tarefa('Estudar Frameworks WEB', false),

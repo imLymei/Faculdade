@@ -8,5 +8,7 @@
 		<ul>
 			<li *ngFor="let tarefaDoLoop of arrayDeTarefas">{{ tarefaDoLoop.descricao }}</li>
 		</ul>
+		<input class="lg-text-input" #campoNovoItem />
+		<button class="btn-primary" (click)="CREATE_tarefa(campoNovoItem.value)">Criar Tarefa</button>
 	</div>
 </main>
