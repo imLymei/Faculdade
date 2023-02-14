@@ -17,7 +17,7 @@ export class AppComponent {
 
 	CREATE_tarefa(_descricaoNovaTarefa: string) {
 		var novaTarefa = new Tarefa(_descricaoNovaTarefa, false);
-		this.arrayDeTarefas.unshift(novaTarefa);
+		this.arrayDeTarefas.push(novaTarefa);
 	}
 
 	READ_tarefas() {
