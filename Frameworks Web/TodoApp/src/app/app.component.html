@@ -2,7 +2,9 @@
 	<div class="main">
 		<h1>To Do List</h1>
 		<ul>
-			<li *ngFor="let tarefaDoLoop of arrayDeTarefas">{{ tarefaDoLoop.descricao }}</li>
+			<li *ngFor="let tarefaDoLoop of arrayDeTarefas">
+				<app-item [tarefa]="tarefaDoLoop" (delete_tarefa)="DELETE_tarefa($event)">></app-item>
+			</li>
 		</ul>
 		<div class="inputs">
 			<input class="lg-text-input" #campoNovoItem />

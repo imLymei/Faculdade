@@ -20,6 +20,11 @@ export class AppComponent {
 		this.arrayDeTarefas.push(novaTarefa);
 	}
 
+	DELETE_tarefa(item_descricao: string){
+		var index = this.arrayDeTarefas.map(function(e) { return e.descricao; }).indexOf(item_descricao);
+		this.arrayDeTarefas.splice(index,1)
+	}
+
 	READ_tarefas() {
 		this.arrayDeTarefas = [
 			new Tarefa('Estudar Frameworks WEB', false),
